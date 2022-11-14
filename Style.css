@@ -1,3 +1,12 @@
+#navbar {
+    width: 100%;
+    float: left;
+    margin: 0 0 1em 0;
+    padding: 0;
+    background-color: #000000;
+    border-bottom: 1px solid #ccc;
+}
+
 .navitem {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
