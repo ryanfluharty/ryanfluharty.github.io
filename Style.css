@@ -1,5 +1,6 @@
 html {
     background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #navbar {
@@ -14,7 +15,6 @@ html {
 
 .navitem {
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     display: inline;
     border-radius: 25px;
     background: #d3d3d3;
@@ -22,5 +22,73 @@ html {
     width: 85%;
     height: 80%;
     justify-content: center;
-    
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    margin: 0px;
+}
+
+#menu {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    color: white;
+    font-size: clamp(3rem, 8vw, 8rem);
+    display: block;
+    text-decoration: none;
+    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+}
+
+#menu-items {
+    margin-left: clamp(4rem, 20vw, 48rem);
+    position: relative;
+    z-index: 2;
+}
+
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item:hover {
+    opacity: 1;
+}
+
+#menu-background-pattern {
+background-image: radialGradient(
+    rgba(2255, 255, 255, 0.1) 9%,
+    transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    transition: opacity 800ms ease,
+        background-size 800ms ease;
+}
+
+#menu-items:hover ~ #menu-background-pattern {
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+}
+
+#menu[data-active-index="0"] > #menu-background-pattern {
+    background-position: 0% -25%;
+}
+
+#menu[data-active-index="1"] > #menu-background-pattern {
+    background-position: 0% -50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-pattern {
+    background-position: 0% -75%;
+}
+
+#menu[data-active-index="3"] > #menu-background-pattern {
+    background-position: 0% -100%;
 }
