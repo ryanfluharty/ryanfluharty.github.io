@@ -1,5 +1,5 @@
 html {
-    background-color: lightgreen;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -8,7 +8,7 @@ html {
     float: left;
     margin: 0 0 1em 0;
     padding: 0;
-    background-color: #000000;
+    background-color: lightgreen;
     border-bottom: 1px solid #ccc;
     justify-content: center;
 }
