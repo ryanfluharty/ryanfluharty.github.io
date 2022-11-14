@@ -1,3 +1,7 @@
+html {
+    background-color: lightgreen;
+}
+
 #navbar {
     width: 100%;
     float: left;
@@ -5,6 +9,7 @@
     padding: 0;
     background-color: #000000;
     border-bottom: 1px solid #ccc;
+    justify-content: center;
 }
 
 .navitem {
@@ -14,6 +19,8 @@
     border-radius: 25px;
     background: #d3d3d3;
     padding: 20px;
-    width: auto;
-    height: auto;
+    width: 85%;
+    height: 80%;
+    justify-content: center;
+    
 }
