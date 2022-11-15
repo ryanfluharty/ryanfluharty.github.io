@@ -34,3 +34,16 @@ body {
     background: lightskyblue;
     cursor: pointer;
 }
+
+div .box {
+    width: 300px;
+    border: 15px solid white;
+    padding: 50px;
+    margin: 20px;
+}
+
+.caption {
+    justify-content: left;
+    font-weight: bold;
+    color: antiquewhite;
+}
