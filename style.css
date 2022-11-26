@@ -52,3 +52,7 @@ div .box {
     font-weight: bold;
     color: antiquewhite;
 }
+
+#me {
+    display: none;
+}
