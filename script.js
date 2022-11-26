@@ -27,7 +27,7 @@ let hide = function() {
     hideButton.style.display = 'none'
 };
 
-revealButton.onclick = activate;
-awayButton.onclick = disable;
-showButton.onclick = show;
-hideButton.onclick = hide;
+revealButton.addEventListener('click', activate);
+awayButton.addEventListener('click', disable);
+showButton.addEventListener('click', show);
+hideButton.addEventListener('click', hide);
