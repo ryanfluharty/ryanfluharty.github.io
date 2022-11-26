@@ -6,25 +6,25 @@ let hideButton = document.getElementById('hide');
 let resume = document.getElementsByClassName('resume');
 
 let activate = function() {
-    myInfo.style.display = "inline"
-    revealButton.style.display = 'none'
+    myInfo.style.visibility = 'visible'
+    revealButton.style.visibility = 'hidden'
 };
 
 let disable = function() {
-    myInfo.style.display = 'none'
-    revealButton.style.display = 'inline'
+    myInfo.style.visibility = 'hidden'
+    revealButton.style.visibility = 'visible'
 };
 
 let show = function() {
-    resume.style.display = 'inline'
-    showButton.style.display = 'none'
-    hideButton.style.display = 'inline'
+    resume.style.visibility = 'visible'
+    showButton.style.visibility = 'hidden'
+    hideButton.style.visibility = 'visible'
 };
 
 let hide = function() {
-    resume.style.display = 'none'
-    showButton.style.display = 'inline'
-    hideButton.style.display = 'none'
+    resume.style.visibility = 'hidden'
+    showButton.style.visibility = 'visible'
+    hideButton.style.visibility = 'hidden'
 };
 
 revealButton.addEventListener('click', activate);

@@ -54,13 +54,13 @@ div .box {
 }
 
 #me {
-    display: none;
+    visibility: hidden;
 }
 
 .resume { 
-    display: none;
+    visibility: hidden;
 }
 
 #hide {
-    display: none;
+    visibility: hidden;
 }
